@@ -1,0 +1,3 @@
+fishdb/experiments/training/faster_rcnn_resnet101*
+fishdb/experiments/exported_model/*
+*.avi

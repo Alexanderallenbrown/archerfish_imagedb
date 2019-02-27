@@ -1,0 +1,10 @@
+
+run this from the tfod library.
+
+python2 object_detection/train.py --logtostderr --pipeline_config_path /home/brownlab/aab_pyimagesearch/ssds_and_rcnn/fishdb/experiments/training/faster_rcnn_fishdb.config --train_dir /home/brownlab/aab_pyimagesearch/ssds_and_rcnn/fishdb/experiments/training/
+
+python object_detection/eval.py --logtostderr --pipeline_config_path /home/brownlab/aab_pyimagesearch/ssds_and_rcnn/fishdb/experiments/training/faster_rcnn_fishdb.config --checkpoint_dir /home/brownlab/aab_pyimagesearch/ssds_and_rcnn/fishdb/experiments/training/ --eval_dir /home/brownlab/aab_pyimagesearch/ssds_and_rcnn/fishdb/experiments/evaluation/
+
+
+#evaluate 
+python predict.py --model fishdb/experiments/exported_model/frozen_inference_graph.pb --labels fishdb/records/classes.pbtxt --image testframe.jpg  --num-classes 1
